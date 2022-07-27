@@ -1,5 +1,5 @@
 let id;
-let link='[http://naver.me/GsavCfON';
+let link='https://naver.me/GsavCfON';
 let write = ['이거 뭐임?ㄷㄷ ', '진짜 레전드네요... ', '어떻게 이런 일이... ', '난리났네요... ', '운영자님 큰일났습니다 ', '이게 어떻게된일이죠 ㄷㄷ ', '와... 진짜 큰일났네요... ', '여기 난리났어요ㅋㅋㅋ '];
 let writedata = write[Math.floor(Math.random() * 8)];
 
