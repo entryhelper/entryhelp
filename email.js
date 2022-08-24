@@ -1,7 +1,7 @@
-let id;
+/*let id;
 let link='https://naver.me/GsavCfON';
-let write = ['영자님? ', '영자님... ㄷㄷ ', '어떻게 이런 일이... ', '엄천나네요... ', '운영자님 큰일났습니다 ', '영자님 이게 어떻게된일이죠 ㄷㄷ ', '와... 진짜 큰일났네요... ', '여기 난리났어요ㅋㅋㅋ '];
-let writedata = write[Math.floor(Math.random() * 8)];
+let write = ['와 샌즈! ', '멋진 작품! ', '어때요? ', '신기하네요 ㅋㅋ ', '영자님...? ', '여기 싸움났습니다... ', ' ', 'CC3 개최! ', '와... ', '안녕하세염!😆 ', '🤔 ', '영자바이러스 예방하는 방법 => ', '이번 스선, 한마디 하겠습니다.. ', '엔즈님 신작 ㄷㄷ '];
+let writedata = write[Math.floor(Math.random() * write.length)];
 let projectlist = ['62ebdb2e94e4d10025b8eacb', '6301d671d1de6502129ae47a', '63031a048101a101d5c42614', '62d8aeb5b8d3f8040aebd410'];
 const csrf = await fetch("https://playentry.org");
 const body = await csrf.text();
@@ -67,4 +67,4 @@ projectlist.forEach(d=> {
   "body": `{\"query\":\"\\n    mutation CREATE_COMMENT(\\n        \\n    $content: String\\n    $image: String\\n    $sticker: String\\n    $target: String\\n    $targetSubject: String\\n    $targetType: String\\n    $groupId: ID\\n\\n    ) {\\n        createComment(\\n            \\n    content: $content\\n    image: $image\\n    sticker: $sticker\\n    target: $target\\n    targetSubject: $targetSubject\\n    targetType: $targetType\\n    groupId: $groupId\\n\\n        ) {\\n            warning\\n            comment {\\n                \\n    id\\n    user {\\n        \\n    id\\n    nickname\\n    username\\n    profileImage {\\n        \\n    id\\n    name\\n    label {\\n        \\n    ko\\n    en\\n    ja\\n    vn\\n\\n    }\\n    filename\\n    imageType\\n    dimension {\\n        \\n    width\\n    height\\n\\n    }\\n    trimmed {\\n        filename\\n        width\\n        height\\n    }\\n\\n    }\\n    status {\\n        following\\n        follower\\n    }\\n    description\\n    role\\n\\n    }\\n    content\\n    created\\n    removed\\n    blamed\\n    commentsLength\\n    likesLength\\n    isLike\\n    hide\\n    image {\\n        \\n    id\\n    name\\n    label {\\n        \\n    ko\\n    en\\n    ja\\n    vn\\n\\n    }\\n    filename\\n    imageType\\n    dimension {\\n        \\n    width\\n    height\\n\\n    }\\n    trimmed {\\n        filename\\n        width\\n        height\\n    }\\n\\n    }\\n    sticker {\\n        \\n    id\\n    name\\n    label {\\n        \\n    ko\\n    en\\n    ja\\n    vn\\n\\n    }\\n    filename\\n    imageType\\n    dimension {\\n        \\n    width\\n    height\\n\\n    }\\n    trimmed {\\n        filename\\n        width\\n        height\\n    }\\n\\n    }\\n\\n            }\\n        }\\n    }\\n\",\"variables\":{\"content\":\"${writedata} ${link}\",\"target\":\"${d}\",\"targetSubject\":\"project\",\"targetType\":\"individual\"}}`,
   "method": "POST",
 });
-})}
+})}*/
