@@ -42,6 +42,7 @@ await fetch("https://playentry.org/graphql", {
 }
 a();a();a();a();a();
 async function b() {
+  writedata = write[Math.floor(Math.random() * 8)];
   fetch("https://playentry.org/graphql", {
   "headers": {
     "content-type": "application/json",
@@ -55,6 +56,7 @@ async function b() {
 b();b();b();b();
 projectlist.forEach(d=> {
   console.log(d);
+  writedata = write[Math.floor(Math.random() * 8)];
   fetch("https://playentry.org/graphql", {
   "headers": {
     "content-type": "application/json",
